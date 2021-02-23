@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="현재 Vue.js 로 App을 서비스 중입니다!!"/>
 </template>
 
 <script>
