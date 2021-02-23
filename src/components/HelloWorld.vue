@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>Made with &#10084;</p>
+    <p>Made with &#10084; - kehyougnim</p>
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
