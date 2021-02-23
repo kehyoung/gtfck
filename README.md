@@ -1,5 +1,7 @@
 # gtfck
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3db8cadb-5def-49f1-9c72-d30d3090cb0e/deploy-status)](https://app.netlify.com/sites/gtfck/deploys)
+
 ## Project setup
 ```
 npm install
