@@ -1,5 +1,5 @@
 <template>
-  <div class="map"></div>
+  <div class="map" id="map"></div>
 </template>
 
 <script>
@@ -13,7 +13,7 @@ export default {
       this.initMap();
     } else {
       const script = document.createElement("script");
-      /* global kakao */
+      // global kakao
       script.onload = () => kakao.maps.load(this.initMap);
       script.src =
         "http://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=97ef3485b87cdb41adf506a8c42c308d";
