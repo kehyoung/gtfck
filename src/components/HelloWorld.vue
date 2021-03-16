@@ -24,11 +24,22 @@ export default {
     initMap() {
       var mapContainer = document.getElementById("map"), // 지도를 표시할 div
         mapOption = {
-          center: new kakao.maps.LatLng(37.564343, 126.947613), // 지도의 중심좌표
+          center: new kakao.maps.LatLng(37.566604, 126.978409), // 지도의 중심좌표
           level: 3, // 지도의 확대 레벨
         };
 
       var map = new kakao.maps.Map(mapContainer, mapOption);
+
+      kakao.maps.event.addListener(map, "click", this.clicked);
+    },
+    clicked(mouse_event) {
+      // 클릭한 위도, 경도 정보를 가져옵니다
+      var latlng = mouse_event.latLng;
+
+      var message = "클릭한 위치의 위도는 " + latlng.getLat() + " 이고, ";
+      message += "경도는 " + latlng.getLng() + " 입니다";
+
+      console.log(message);
     },
   },
 };
